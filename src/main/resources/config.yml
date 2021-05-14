@@ -1,0 +1,83 @@
+# _ _____ _____ _____ _____ _____ _____ _____ _
+#|_|_____|_____|_____|_____|_____|_____|_____|_|
+#| |          _____  _____   ____            | |
+#| |         |  __ \|  __ \ / __ \           | |
+#|_|         | |__) | |__) | |  | |          |_|
+#| |         |  ___/|  _  /| |  | |          | |
+#| |         | |    | | \ \| |__| |          | |
+#|_|         |_|    |_|  \_\\____/           |_|
+#| |                                         | |
+#| |       ProAnnounces | SedatTR#8666       | |
+#|_|_____ _____ _____ _____ _____ _____ _____|_|
+#|_|_____|_____|_____|_____|_____|_____|_____|_|
+#
+# If you have any question or suggestion please contact to me.
+# Discord: SedatTR#8666
+# Discord Server: https://discord.gg/nchk86TKMT
+messages: # You can use %header%, %footer%, %prefix%, %center% in announces.
+  header: '&f&m+-------------------+'
+  footer: '&f&m+-------------------+'
+  prefix: '&8[&eProAnnounces&8]'
+
+  usage:
+    - "&8- &a/proannounces info: &7Shows announce informations."
+    - "&8- &a/proannounces toggle: &7Toggles announces."
+    - "&8- &a/proannounces reload: &7Reloads plugin."
+  noPermission: "&cYou don't have permission for using this command!"
+  notPlayer: "&cYou are not player!"
+  announcesEnabled: "&aSuccessfully enabled announces!"
+  announcesDisabled: "&cSuccessfully disabled announces!"
+  reloaded: "&aPlugin successfully reloaded!"
+  info:
+    - "&aAnnounce Count: &7%announce_count%"
+    - "&aCurrent Announce: &7%current_announce%"
+    - "&aSound: &7%sound%"
+    - "&aRandom: &7%random%"
+    - "&aMinimum Players: &7%minimum_players%"
+    - "&aReload Time: &7%reload% seconds"
+
+settings:
+  reload: 300 # Announce time in seconds.
+  random: false # Enable if you want to see announces random.
+  minimumPlayers: 1 # If online player count is less than this number, will not sent announces.
+  permissions: # Permissions for commands, write '' to disable.
+    command: ''
+    toggle: ''
+    info: 'announces.info'
+    reload: 'announces.reload'
+  sound: # You can enable this if you want to hear sound when announce is sent.
+    enabled: false
+    value: "ORB_PICKUP"
+    volume: 1
+    pitch: 1
+  worlds: # If you enable worlds, people only see their world's announces.
+    enabled: false
+    world:
+      - "announce1"
+
+# If you want to use hex colors, you can write #COLOR in everywhere. (Example: #FF0000Hello #00FF00%player_name%!)
+# You can use PlaceholderAPI placeholders in all messages.
+# If you don't have PlaceholderAPI plugin, you can use this default placeholders:
+# %name%, %displayname%, %ping%, %deaths%, %health%, %hunger%, %xp%, %world%, %location_x%, %location_y%, %location_z%, %online%
+announces:
+  announce1:
+    - '%center%%header%'
+    - '%center%&eNew Announce'
+    - '&r'
+    - '%center%&aThanks for using my plugin!'
+    - '&r'
+    - '%center%%footer%'
+  announce2:
+    - '%center%%header%'
+    - '%center%&dNew Announce'
+    - '&r'
+    - "%center%&aDon't forget to review 5 stars!"
+    - '&r'
+    - '%center%%footer%'
+  announce3:
+    - '%center%%header%'
+    - '%center%&bNew Announce'
+    - '&r'
+    - '%center%&aThanks for playing in server!'
+    - '&r'
+    - '%center%%footer%'

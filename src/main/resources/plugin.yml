@@ -1,0 +1,8 @@
+main: me.sedattr.announces.ProAnnounces
+version: 3.0
+name: ProAnnounces
+author: SedatTR
+commands:
+  proannounces:
+    aliases: [proannounce, announces, announce]
+    description: Default announces command.
